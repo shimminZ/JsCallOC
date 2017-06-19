@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <title>Title</title>
+            <style type="text/css">
+                *{
+                    margin: 0px;
+                    padding: 0px;;
+                }
+            p.p1{
+                background-color: aqua;
+                opacity: 0.6;
+                width: 100px;
+                margin-bottom:20px;
+            }
+            p.p2{
+                background-color: aqua;
+                opacity: 0.6;
+                width: 100%;
+                margin-bottom:20px;
+            }
+            p.p3{
+                background-color: aqua;
+                opacity: 0.6;
+                width: 100%;
+                margin-bottom:20px;
+            }
+            </style>
+    </head>
+    <body style = "border: 2px solid">
+         <br> <br>
+         <p class="p1" onclick="clickP1()"> 第一个p标签 </p>
+         <p class="p2" onclick="clickP2()"> 第二个p标签 </p>
+         <p class="p3" onclick="clickP3()"> 第三个p标签 </p>
+         
+         <script>
+             function clickP1(){
+                 location.href='clickp://';
+             }
+         
+             function clickP2(){
+                 location.href='clickp://sendMessage?点击第二个p标签';
+             }
+         
+             function clickP3(){
+                 location.href='clickp://sendMessage?firstMessage=点击第三个p标签?lastMessage=这是第二个参数';
+             }
+
+         </script>
+    </body>
+</html>
